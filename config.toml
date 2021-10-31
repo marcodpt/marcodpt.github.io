@@ -21,7 +21,7 @@ compile_sass = true
 # static files. Note that for this to work, both `static` and the
 # output directory need to be on the same filesystem. Note that the theme's `static`
 # files are always copied, regardless of this setting.
-hard_link_static = true
+hard_link_static = false
 
 # The taxonomies to be rendered for the site and their configuration of the default languages
 # Example:
