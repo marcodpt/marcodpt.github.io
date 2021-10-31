@@ -1,2 +1,2 @@
-# marcodpt.github.io
-My Thoughs
+# My Thoughs
+My personal web page and thoughs
