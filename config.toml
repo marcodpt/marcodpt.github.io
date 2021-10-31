@@ -1,8 +1,40 @@
 # The URL the site will be built for
 base_url = "https://marcodpt.github.io/"
 
+# The site title and description; used in feeds by default.
+title = "My Thoughts"
+description = "A collection of random thoughts I had over the years."
+
+# The default language; used in feeds.
+default_language = "en"
+
+# The site theme to use.
+theme = "DeepThought"
+
+# For overriding the default output directory `public`, set it to another value (e.g.: "docs")
+output_dir = "docs"
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
+
+# When set to "true", files in the `static` directory are hard-linked. Useful for large
+# static files. Note that for this to work, both `static` and the
+# output directory need to be on the same filesystem. Note that the theme's `static`
+# files are always copied, regardless of this setting.
+hard_link_static = true
+
+# The taxonomies to be rendered for the site and their configuration of the default languages
+# Example:
+#     taxonomies = [
+#       {name = "tags", feed = true}, # each tag will have its own feed
+#       {name = "tags"}, # you can have taxonomies with the same name in multiple languages
+#       {name = "categories", paginate_by = 5},  # 5 items per page for a term
+#       {name = "authors"}, # Basic definition: no feed or pagination
+#     ]
+#
+taxonomies = [
+  {name = "tags", paginate_by = 5}
+]
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
@@ -14,3 +46,18 @@ highlight_code = true
 
 [extra]
 # Put all your custom variables here
+
+navbar_items = [
+ { code = "en", nav_items = [
+  { url = "$BASE_URL", name = "Home" },
+  { url = "$BASE_URLposts", name = "Posts" },
+  { url = "$BASE_URLtags", name = "Tags" },
+ ]},
+]
+
+[extra.author]
+name = "marcodpt"
+avatar = "/avatar.jpeg"
+
+[extra.social]
+github = "marcodpt"

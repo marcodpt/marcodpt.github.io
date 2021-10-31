@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://marcodpt.github.io/</loc>
+    </url>
+    <url>
+        <loc>https://marcodpt.github.io/posts/</loc>
+    </url>
+    <url>
+        <loc>https://marcodpt.github.io/posts/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://marcodpt.github.io/posts/the-power-of-coherence/</loc>
+        <lastmod>2021-10-31</lastmod>
+    </url>
+    <url>
+        <loc>https://marcodpt.github.io/tags/</loc>
+    </url>
+    <url>
+        <loc>https://marcodpt.github.io/tags/entrepreneurship/</loc>
+    </url>
+    <url>
+        <loc>https://marcodpt.github.io/tags/entrepreneurship/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://marcodpt.github.io/tags/ethics/</loc>
+    </url>
+    <url>
+        <loc>https://marcodpt.github.io/tags/ethics/page/1/</loc>
+    </url>
+</urlset>
