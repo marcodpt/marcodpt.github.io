@@ -57,7 +57,7 @@ navbar_items = [
 
 [extra.author]
 name = "marcodpt"
-avatar = "/images/avatar.jpeg"
+avatar = "/avatar.jpeg"
 
 [extra.social]
 github = "marcodpt"
