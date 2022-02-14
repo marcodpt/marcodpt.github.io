@@ -1,135 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <meta content="#ffffff" name="theme-color" />
-  <meta content="#da532c" name="msapplication-TileColor" />
-
-  
-  
-  
-  
-  
-
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/themes/folio/galleria.folio.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link href='https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css' rel='stylesheet' />
-  <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet" />
-  <link href="https://marcodpt.github.io/deep-thought.css" rel="stylesheet" />
-
-  <title>
+<html>
+  <head>
     
-    My Thoughts
+    <title>My Thoughts</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     
-  </title>
-
-  
-
-  
-</head>
-
-<body class="has-background-white">
-  <nav aria-label="section navigation" class="navbar is-light" role="navigation">
-    <div class="container">
-      <div class="navbar-brand">
-        <a class="navbar-item is-size-5 has-text-weight-bold" href="https:&#x2F;&#x2F;marcodpt.github.io&#x2F;">My Thoughts</a>
-        <a aria-expanded="false" aria-label="menu" class="navbar-burger burger" data-target="navMenu" role="button">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-      <div class="navbar-menu" id="navMenu">
-        <div class="navbar-end has-text-centered">
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/5/materia/bootstrap.min.css"
+    >
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://marcodpt.github.io/js/theme.js"></script>
+    <script src="https://marcodpt.github.io/js/scheme.js"></script>
+    <script src="https://marcodpt.github.io/js/blockquote.js"></script>
+    
+    <script defer src="https://marcodpt.github.io/elasticlunr.min.js"></script>
+    <script defer src="https://marcodpt.github.io/search_index.en.js"></script>
+    <script src="https://marcodpt.github.io/js/search.js"></script>
+    
+    
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    
+    <nav class="
+      navbar
+      navbar-expand-lg
+      navbar-light
+      bg-light
+    ">
+      <div class="container-fluid">
+        <a class="navbar-brand"
+          href="https:&#x2F;&#x2F;marcodpt.github.io&#x2F;"
+          title="A collection of random thoughts I had over the years."
+        >My Thoughts</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarColor02"
+          aria-controls="navbarColor02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav me-auto">
+            
+            
+            
+          </ul>
           
+          <form class="d-flex" onsubmit="return goSearch(event)">
+            <input
+              class="form-control me-sm-2"
+              type="text"
+              placeholder="Search"
+            />
+            <button
+              class="btn btn-secondary my-2 my-sm-0"
+              type="submit"
+            ><i class="fas fa-search"></i></button>
+          </form>
           
-          
-          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;marcodpt.github.io&#x2F;">
-            Home
-          </a>
-          
-          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;marcodpt.github.io&#x2F;posts">
-            Posts
-          </a>
-          
-          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;marcodpt.github.io&#x2F;tags">
-            Tags
-          </a>
-          
-          
-          
-          <a class="navbar-item" id="nav-search" title="Search" data-target="#search-modal">
-            <span class="icon">
-              <i class="fas fa-search"></i>
-            </span>
-          </a>
-          <a class="navbar-item" id="dark-mode" title="Switch to dark theme">
-            <span class="icon">
-              <i class="fas fa-adjust"></i>
-            </span>
-          </a>
         </div>
       </div>
-    </div>
-  </nav>
-
-  
-<section class="section">
-  <div class="container">
-    <div class="has-text-centered">
-      <h1 class="title is-2">My Thoughts</h1>
-      <p class="subtitle is-4">A collection of random thoughts I had over the years.</p>
+    </nav>
+    <main class="container mx-auto my-5">
       
-      <figure class="image is-flex is-justify-content-center is-align-items-center">
-        <img class="is-rounded" src="&#x2F;avatar.jpeg" style="max-width: 192px" />
-      </figure>
-      
-      
-<p>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  <a href="https://github.com/marcodpt" target="_blank">
-    <span class="icon is-large" title="GitHub">
-      <i class="fab fa-github fa-lg"></i>
-    </span>
-  </a>
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
   
   
+    <h1 class="px-3">My Thoughts</h1>
   
-
   
-
+    <p class="px-3 text-muted">A collection of random thoughts I had over the years.</p>
   
-</p>
-
-    </div>
-    <div class="content">
-      <p>This is my personal blog.</p>
+  
+    <div class="px-3"><p>This is my personal blog.</p>
 <p>I am a brazilian, born and living in Sao Paulo.</p>
 <p>I am a full stack developer.</p>
 <p>I studied physics in the college.</p>
@@ -138,84 +89,109 @@
 <p>I am a decent chess player with some good performances in the local club.</p>
 <p>And my political views is libertarian.</p>
 <p>So you can expect posts in this topics :).</p>
-
-    </div>
-  </div>
-</section>
-
-
+</div>
   
-  <section class="modal" id="search-modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Search</p>
-      </header>
-      <section class="modal-card-body">
-        <div class="field mb-2">
-          <div class="control">
-            <input class="input" id="search" placeholder="Search this website." type="search" />
-          </div>
+	
+    
+  
+    <div class="card p-3 border-0">
+      <div class="row g-5">
+        
+        
+        <div class="col-md-12">
+          
+  <h6 class="card-title">
+    <a
+      class="text-decoration-none text-reset"
+      href="https:&#x2F;&#x2F;marcodpt.github.io&#x2F;the-power-of-coherence&#x2F;"
+      rel="bookmark"
+      title="The Power of Coherence"
+    ><b>The Power of Coherence</b></a>
+  </h6>
+  <p class="card-text">
+    <small class="text-muted">
+      
+  
+  
+  31&#x2F;10&#x2F;2021
+
+    </small>
+  </p>
+
+          
+          
+  <p class="card-text text-muted">
+    
+      <small>&lt;p&gt;Let&#x27;s start with a Linus Torvalds quote:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I like offending people, because I think people who get offended should be
+offended.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;This quote sounds a lot aggresive. But it has a lot meaning behind it in my
+opinion.&lt;&#x2F;p&gt;
+&lt;p&gt;I think that one of the most difficult parts of growing up is to became a
+coherent person. But what means to be coherent? And why this is so important?&lt;&#x2F;p&gt;
+...</small>
+    
+  </p>
+
+          
         </div>
-        <div class="search-results">
-          <div class="search-results__items"></div>
-        </div>
-      </section>
+      </div>
     </div>
-    <button aria-label="close" class="modal-close is-large"></button>
-  </section>
   
 
-
-  
+	
   
   
 
   
+    
+  <h4
+    class="border-bottom border-primary border-2 text-uppercase mt-5 fw-bold"
+  >Posts by Topics</h4>
+
+    
+    
+      <a
+        class="text-decoration-none text-reset"
+        href="https:&#x2F;&#x2F;marcodpt.github.io&#x2F;tags&#x2F;entrepreneurship&#x2F;"
+      >entrepreneurship</a> | 
+    
+      <a
+        class="text-decoration-none text-reset"
+        href="https:&#x2F;&#x2F;marcodpt.github.io&#x2F;tags&#x2F;ethics&#x2F;"
+      >ethics</a> | 
+    
   
 
-  <footer class="footer py-4">
-    <div class="content has-text-centered">
-      <p>
-        Built with
-        <span class="icon-text">
-          <span class="icon">
-            <i class="fas fa-code"></i>
-          </span>
-          <span>code</span>
-        </span>
-        and
-        <span class="icon-text">
-          <span class="icon">
-            <i class="fas fa-heart"></i>
-          </span>
-          <span>love</span>
-        </span>
-      </p>
-      <p>
-        Powered by
-        <span class="icon-text">
-          <span class="icon">
-            <i class="fas fa-power-off"></i>
-          </span>
-          <span>zola</span>
-        </span>
-      </p>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/galleria.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mermaid@8.9.2/dist/mermaid.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.xkcd@1.1.13/dist/chart.xkcd.min.js"></script>
-  <script src='https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js'></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/themes/folio/galleria.folio.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.min.js"></script>
-  <script src="https://marcodpt.github.io/search_index.en.js"></script>
-  <script src="https://marcodpt.github.io/js/site.js"></script>
-
-  
-  
-</body>
-
+    </main>
+    
+    
+    <footer class="
+      mt-auto p-5
+      bg-light
+      text-center
+      text-dark
+    ">
+      
+      <a
+        href="mailto:marcodpt@protonmail.com"
+        class="text-reset text-decoration-none"
+      >marcodpt@protonmail.com</a>
+      
+      
+      <div class="mt-2">
+        
+          <a
+            class="text-reset mx-1 bg-transparent"
+            href="https:&#x2F;&#x2F;www.github.com&#x2F;marcodpt&#x2F;marcodpt.github.io"
+            title="Github"
+          ><i class="fab fa-github"></i></a>
+        
+      </div>
+      
+    </footer>
+    
+  </body>
 </html>

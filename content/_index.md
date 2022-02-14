@@ -1,6 +1,9 @@
 ---
 title: My Thoughts
 description: A collection of random thoughts I had over the years.
+paginate_by: 5
+extra:
+  tags: true
 ---
 
 This is my personal blog.

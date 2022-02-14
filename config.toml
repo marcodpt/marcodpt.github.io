@@ -9,7 +9,7 @@ description = "A collection of random thoughts I had over the years."
 default_language = "en"
 
 # The site theme to use.
-theme = "DeepThought"
+theme = "zolastrap"
 
 # For overriding the default output directory `public`, set it to another value (e.g.: "docs")
 output_dir = "docs"
@@ -47,17 +47,16 @@ highlight_code = true
 [extra]
 # Put all your custom variables here
 
-navbar_items = [
- { code = "en", nav_items = [
-  { url = "$BASE_URL", name = "Home" },
-  { url = "$BASE_URLposts", name = "Posts" },
-  { url = "$BASE_URLtags", name = "Tags" },
- ]},
+tags = 'Posts by Topics'
+social_icons = [
+  {title = 'Github', icon = 'github', url = 'https://www.github.com/marcodpt/marcodpt.github.io'}
 ]
-
-[extra.author]
-name = "marcodpt"
-avatar = "/avatar.jpeg"
-
-[extra.social]
-github = "marcodpt"
+email = 'marcodpt@protonmail.com'
+tags = 'Posts by Topics'
+themes = false
+schemes = false
+theme = 'materia'
+footer_bg = "light"
+footer_font = "dark"
+navbar_bg = "light"
+navbar_type = "light"
