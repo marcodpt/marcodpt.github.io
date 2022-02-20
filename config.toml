@@ -15,7 +15,7 @@ theme = "zolastrap"
 output_dir = "docs"
 
 # Whether to automatically compile all Sass files in the sass directory
-compile_sass = true
+compile_sass = false
 
 # When set to "true", files in the `static` directory are hard-linked. Useful for large
 # static files. Note that for this to work, both `static` and the
@@ -47,16 +47,12 @@ highlight_code = true
 [extra]
 # Put all your custom variables here
 
-tags = 'Posts by Topics'
-social_icons = [
-  {title = 'Github', icon = 'github', url = 'https://www.github.com/marcodpt/marcodpt.github.io'}
-]
-email = 'marcodpt@protonmail.com'
-tags = 'Posts by Topics'
-themes = false
-schemes = false
 theme = 'materia'
-footer_bg = "light"
-footer_font = "dark"
-navbar_bg = "light"
-navbar_type = "light"
+themes = ""
+schemes = ""
+bg = "light"
+email = 'marcodpt@protonmail.com'
+icons = [
+  {icon = 'github', url = 'https://www.github.com/marcodpt/marcodpt.github.io'}
+]
+utterances = 'marcodpt/marcodpt.github.io'
